@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row g-3">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://www.efutureshoppee.com/wp-content/uploads/2018/05/Online-ShoppingOnline-ShoppingOnline-Shopping.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Flagship_100_Blog_2880x1800_Apparel.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://www.shopping.com/images/banner-image-tall-mobile.jpg" class="d-block w-100" alt="...">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div *ngFor="let i of productadd" class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-3 col-xxl-2">
+                    <div class="card">
+                        <img src="{{i.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{i.title}}</h5>
+                          <p class="card-text">{{i.price}}</p>
+                          <a href="#" class="btn btn-primary">BUY NOW</a>
+                        </div>
+                      </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
